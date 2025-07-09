@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Syntax Demo</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    .output { background: #f4f4f4; padding: 15px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+  <h1>JavaScript Syntax Concepts</h1>
+  <button onclick="runSyntaxDemo()">Run Demo</button>
+  <div class="output" id="outputBox">Output will appear here...</div>
+
+  <script>
+    function runSyntaxDemo() {
+      // Variables using let, const
+      let firstName = "John";
+      const pi = 3.14;
+      let x = 5;
+      let y = 6;
+      let z = x + y;
+
+      // Arithmetic and assignment
+      let total = (x + y) * 2;
+      x += 10;  // Now x = 15
+
+      // Expressions
+      let fullName = firstName + " " + "Doe";
+
+      // Case sensitivity
+      let lastName = "Smith";
+      let LastName = "Peterson";
+
+      // Output
+      document.getElementById("outputBox").innerHTML = `
+        Name: ${fullName}<br>
+        x: ${x}, y: ${y}, z: ${z}<br>
+        Total: ${total}<br>
+        lastName: ${lastName}<br>
+        LastName: ${LastName}<br>
+        pi: ${pi}
+      `;
+
+      // Console log and alert
+      console.log("Demo executed successfully!");
+      // alert("Demo is complete!");
+    }
+
+    // This is a single-line comment
+    /*
+      This is a multi-line comment
+      for educational purposes
+    */
+  </script>
+
+</body>
+</html>

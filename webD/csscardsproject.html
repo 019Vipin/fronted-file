@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frontend Cards Project</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2c3e50;
+    }
+
+    .grid {
+      display: grid;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+      color: #e67e22;
+    }
+
+    .card p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #27ae60;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #219150;
+    }
+
+    .cancel-btn {
+      background-color: #e74c3c;
+    }
+
+    .cancel-btn:hover {
+      background-color: #c0392b;
+    }
+
+    .amount {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .change-link {
+      color: #3498db;
+      text-decoration: underline;
+      font-size: 0.9em;
+      cursor: pointer;
+    }
+
+    .insight-grid {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .insight-card {
+      flex: 1;
+      background-color: #ecf0f1;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .insight-card h3 {
+      font-size: 24px;
+      color: #2c3e50;
+    }
+
+    .insight-card p {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Improve your Frontend Skills by Building Projects</h1>
+
+  <div class="grid">
+
+    <!-- Project Card -->
+    <div class="card">
+      <h2>Start Building!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, velit quod obcaecati voluptatem minus quasi praesentium quia.</p>
+      <a href="#" class="btn">View Projects</a>
+    </div>
+
+    <!-- Order Summary Card -->
+    <div class="card">
+      <h2>Order Summary</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure asperiores nam, recusandae necessitatibus ad quia dicta voluptas doloremque nulla doloribus.</p>
+      <div class="amount">$99.9/year</div>
+      <div class="change-link">Change</div>
+      <div style="margin-top: 15px;">
+        <a href="#" class="btn">Proceed to Payment</a>
+        <a href="#" class="btn cancel-btn">Cancel Order</a>
+      </div>
+    </div>
+
+    <!-- Insights Card -->
+    <div class="card">
+      <h2>Get Insights that Help Your Business Grow</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsum odit eaque accusantium totam repellendus minus sit. Consequuntur, deleniti dignissimos?</p>
+      <div class="insight-grid">
+        <div class="insight-card">
+          <h3>10K+</h3>
+          <p>Comments</p>
+        </div>
+        <div class="insight-card">
+          <h3>214</h3>
+          <p>Paid Users</p>
+        </div>
+        <div class="insight-card">
+          <h3>12M+</h3>
+          <p>Views</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

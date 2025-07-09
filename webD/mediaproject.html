@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CodeHelp - Media Library</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+    header {
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    nav {
+      background-color: #007bff;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 10px 15px;
+      font-weight: bold;
+    }
+
+    .section {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .section h2 {
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .video-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .video-card iframe {
+      width: 100%;
+      height: 180px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #343a40;
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to CodeHelp</h1>
+  </header>
+
+  <nav>
+    <a href="#roadmap">Roadmap Videos</a>
+    <a href="#os">Operating System</a>
+    <a href="#dbms">DBMS</a>
+    <a href="#dsa">DSA</a>
+    <a href="#webdev">Web Development</a>
+  </nav>
+
+  <section class="section" id="about">
+    <h2>About CodeHelp</h2>
+    <p>
+      CodeHelp's mission is to make coding education accessible to everyone, regardless of their background or experience.
+      CodeHelp offers a variety of courses on a variety of topics, including web development, data science, and machine learning.
+      Each course is taught by a team of experienced engineers who are passionate about teaching.
+    </p>
+    <p>
+      CodeHelp also offers a variety of resources to help students learn, including practice problems, coding challenges, and a forum
+      where students can ask questions and get help from other students and instructors.
+      CodeHelp is a great option for anyone who wants to learn to code. It offers a variety of courses, experienced instructors,
+      and a variety of resources to help students learn. CodeHelp is also affordable, making it a great option for students on a budget.
+    </p>
+  </section>
+
+  <section class="section" id="roadmap">
+    <h2>Roadmap Videos</h2>
+    <div class="videos">
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/k6gQ4rZjyME" allowfullscreen></iframe>
+        <p>DSA Roadmap</p>
+      </div>
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/GLk7-imcjiI" allowfullscreen></iframe>
+        <p>Web Dev Roadmap</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="os">
+    <h2>Operating System Videos</h2>
+    <div class="videos">
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/_TpOHMCODXo" allowfullscreen></iframe>
+        <p>Introduction to OS</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="dbms">
+    <h2>DBMS Videos</h2>
+    <div class="videos">
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/ZBvCjUEmGlU" allowfullscreen></iframe>
+        <p>Introduction to DBMS</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="dsa">
+    <h2>DSA Videos</h2>
+    <div class="videos">
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/5_5oE5lgrhw" allowfullscreen></iframe>
+        <p>DSA Basics</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="webdev">
+    <h2>Web Development Videos</h2>
+    <div class="videos">
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/BGeDBfCIqas" allowfullscreen></iframe>
+        <p>HTML & CSS Full Course</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2023 CodeHelp. All rights reserved.
+  </footer>
+
+</body>
+</html>
