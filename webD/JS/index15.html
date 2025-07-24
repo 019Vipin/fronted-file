@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DOM Manipulation Example</title>
+</head>
+<body>
+
+  <!-- DOM Content Modification Examples -->
+  <p id="demo1">This is <span>text</span>.</p>
+  <div id="demo2">
+    Visible <span>Text</span>
+    <p style="display:none">Hidden Text</p>
+  </div>
+  <p id="demo3">Hello <span>world</span></p>
+  <div id="demo4">
+    Hello <span>there</span>
+    <p style="display:none">Hidden!</p>
+  </div>
+
+  <script>
+    // innerHTML Example
+    let el1 = document.getElementById("demo1");
+    console.log("innerHTML:", el1.innerHTML);
+    el1.innerHTML = "New <b>HTML</b> content";
+
+    // innerText Example
+    let el2 = document.getElementById("demo2");
+    console.log("innerText:", el2.innerText);
+    el2.innerText = "New visible text";
+
+    // outerHTML Example
+    let el3 = document.getElementById("demo3");
+    console.log("outerHTML:", el3.outerHTML);
+    el3.outerHTML = "<div>Replaced Element</div>";
+
+    // textContent Example
+    let el4 = document.getElementById("demo4");
+    console.log("textContent:", el4.textContent);
+    el4.textContent = "New plain text";
+
+    // createElement + appendChild (Simple Example)
+    let newDiv = document.createElement("div");
+    newDiv.textContent = "Hello from createElement!";
+    document.body.appendChild(newDiv);
+
+    // createElement + textNode + appendChild (Detailed Example)
+    let newPara = document.createElement("p");
+    let textNode = document.createTextNode("This is a dynamically added paragraph.");
+    newPara.appendChild(textNode);
+    document.body.appendChild(newPara);
+  </script>
+</body>
+</html>

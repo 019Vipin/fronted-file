@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM, BOM, and Window Object</title>
+</head>
+<body>
+
+  <h1 id="title">Welcome to CodeHelp</h1>
+
+  <p id="demo">This is a paragraph.</p>
+
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+
+  <p>Para 1</p>
+  <p>Para 2</p>
+
+  <div class="highlight">Highlight 1</div>
+  <div class="highlight">Highlight 2</div>
+
+  <div class="card">Card 1</div>
+  <div class="card">Card 2</div>
+
+  <button onclick="openWindow()">Open CodeHelp</button>
+
+  <script>
+    // 🔸 DOM: Manipulating ID
+    let title = document.getElementById("title");
+    title.style.color = "blue";
+
+    // 🔸 DOM: getElementById
+    document.getElementById("demo").style.color = "green";
+
+    // 🔸 DOM: getElementsByClassName
+    let boxes = document.getElementsByClassName("box");
+    boxes[1].style.backgroundColor = "yellow";
+
+    // 🔸 DOM: getElementsByTagName
+    let paras = document.getElementsByTagName("p");
+    paras[0].style.fontWeight = "bold";
+
+    // 🔸 DOM: querySelector
+    document.querySelector(".highlight").style.border = "2px solid red";
+
+    // 🔸 DOM: querySelectorAll
+    let cards = document.querySelectorAll(".card");
+    cards[1].style.backgroundColor = "lightblue";
+
+    // 🔸 BOM: Browser Information
+    console.log("Width:", window.innerWidth);
+    console.log("Height:", window.innerHeight);
+    console.log("URL:", window.location.href);
+    console.log("User Agent:", window.navigator.userAgent);
+
+    // 🔸 Window Object: Open new window
+    function openWindow() {
+      window.open("https://www.codehelp.in", "_blank");
+    }
+  </script>
+</body>
+</html>
